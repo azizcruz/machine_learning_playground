@@ -31,6 +31,6 @@ acc = model.score(x_train, y_train) # get the accuracy score
 predicted = model.predict(x_test) # get the predicted values
 names = ["unacc", "acc", "good", "vgood"] # create an array to replace the predicted values to their actual meaning instead of numbers
 print(acc)
-
+print(help(KNeighborsClassifier))
 for x in range(len(predicted)):
     print("Predicted: ", names[predicted[x]], "Data: ", x_test[x], "Actual: ", names[y_test[x]])

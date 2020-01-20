@@ -12,7 +12,7 @@ import pickle
 data = pd.read_csv('student-mat.csv', sep=";") # we read the csv file first
 data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]] # we get the columns that we need and they need to be numbers
 
-predict = "G3" # we want to predict final grade using the columns up
+predict = "G3" # we want to predict final grade using the columns
 
 x = np.array(data.drop([predict], 1)) # we take all the chosen columns and put them in one array except the column we want to study
 y = np.array(data[predict]) # the column we want to study a separated array
